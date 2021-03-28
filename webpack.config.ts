@@ -8,6 +8,9 @@ const config = {
   output: {
     path: path.resolve(__dirname, 'docs'),
   },
+  devServer: {
+    contentBase: 'docs',
+  },
   module: {
     rules: [
       {
