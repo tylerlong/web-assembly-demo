@@ -11,3 +11,10 @@ go run main.go
 ```
 GOARCH=wasm GOOS=js go build -o docs/lib.wasm main.go
 ```
+
+
+## Build website
+
+```
+yarn release
+```

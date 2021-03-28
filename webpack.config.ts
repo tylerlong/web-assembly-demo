@@ -24,9 +24,6 @@ const config = {
       template: './src/index.html',
     }),
   ],
-  resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
-  },
 };
 
 export default [config];

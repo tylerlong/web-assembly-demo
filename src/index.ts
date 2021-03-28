@@ -4,6 +4,7 @@ const go = new Go();
 
 let mod: WebAssembly.Module, instance: WebAssembly.Instance;
 const button = document.createElement('button');
+button.value = 'Run';
 button.disabled = true;
 document.body.appendChild(button);
 

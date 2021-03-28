@@ -16,7 +16,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\nconst go = new Go();\nlet mod, instance;\nconst button = document.createElement('button');\nbutton.disabled = true;\ndocument.body.appendChild(button);\nWebAssembly.instantiateStreaming(fetch('lib.wasm'), go.importObject).then(result => {\n    mod = result.module;\n    instance = result.instance;\n    button.disabled = false;\n});\nasync function run() {\n    await go.run(instance);\n    instance = await WebAssembly.instantiate(mod, go.importObject); // reset instance\n}\nbutton.onclick = run;\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+eval("\nconst go = new Go();\nlet mod, instance;\nconst button = document.createElement('button');\nbutton.value = 'Run';\nbutton.disabled = true;\ndocument.body.appendChild(button);\nWebAssembly.instantiateStreaming(fetch('lib.wasm'), go.importObject).then(result => {\n    mod = result.module;\n    instance = result.instance;\n    button.disabled = false;\n});\nasync function run() {\n    await go.run(instance);\n    instance = await WebAssembly.instantiate(mod, go.importObject); // reset instance\n}\nbutton.onclick = run;\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ })
 

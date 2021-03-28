@@ -5,29 +5,6 @@
     <title>Web Assembly Demo</title>
     <script src="wasm_exec.js"></script>
   <script defer src="main.js"></script></head>
-
   <body>
-    
-
-    <!-- <script>
-      const go = new Go();
-
-      let module, instance;
-
-      WebAssembly.instantiateStreaming(fetch("lib.wasm"), go.importObject).then(
-        result => {
-          module = result.module;
-          instance = result.instance;
-          document.getElementById("runButton").disabled = false;
-        }
-      );
-
-      async function run() {
-        await go.run(instance);
-        instance = await WebAssembly.instantiate(module, go.importObject); // reset instance
-      }
-    </script> -->
-
-    <!-- <button onClick="run();" id="runButton" disabled>Run</button> -->
   </body>
 </html>
